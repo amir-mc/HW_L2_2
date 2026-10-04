@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["src", "main_start.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+]
+show_missing = true
